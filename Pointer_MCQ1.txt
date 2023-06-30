@@ -1,0 +1,63 @@
+Which of the following is the proper declaration of a pointer?
+Ans - int *x;
+Which of the following gives the memory address of integer variable a ?
+Ans - &a;
+Which of the following gives the memory address of variable 'b' pointed by pointer 'a' i.e.
+Ans - a;
+What will happen in this code?
+int a = 100, b = 200;
+int *p = &a, *q = &b;
+p = q;
+
+Ans - As in this case p is pointing to a and q to b . How we are assigning adress of b 
+    to p , hence p points to b .
+
+int a = 7;
+int b = 17;
+int *c = &b;
+*c = 7;
+cout  << a << "  “ << b << endl;
+
+Ans- Here value of a would be 7 and b would be 7 . 
+ int a = 50;
+ int *ptr = &a;
+ int *q = ptr;
+ (*q)++;
+ cout << a  << endl;
+
+ Ans - 51 .
+ int a = 50;
+ int *ptr = &a;
+ cout << (*ptr)++ << “ “;
+ cout << a << endl;
+
+ Ans -1. int *ptr = &a; creates a pointer 'ptr' pointing to the address of 'a'.
+2. cout << (*ptr)++ << " "; prints the value of 'a' (50) and then increments it by 1.
+3. cout << a << endl; prints the updated value of 'a' (51) on a new line.
+
+int *ptr = 0;
+int a = 10;
+*ptr = a;
+cout << *ptr << endl;
+Ans- Error .
+
+What will be the output?
+int a = 7;
+int b = 17;
+int *c = &b;
+*c = 7;
+cout  << a << "  “ << b << endl;
+
+Ans- 7 , 7 ;
+
+What will be the output ?
+float f = 10.5;
+float p = 2.5;
+float* ptr = &f;
+(*ptr)++;
+*ptr = p;
+cout << *ptr << “ “ << f << “ “ << p;
+
+Ans -  2.5 2.5 2.5  
+explanation . ptr points to f. f is incremented by 1 through ptr (f = 11.5 now). f = p using ptr (f = 2.5 now).
+
