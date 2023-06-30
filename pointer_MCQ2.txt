@@ -1,0 +1,94 @@
+ int a = 7;
+int *c = &a;
+c = c + 1;
+cout  << a << "  " << *c << endl;
+
+Ans - 7 , Garbage value .
+
+Assume the memory address of variable ‘a’ is 400 (and an integer takes 4 bytes), what will be the output -
+int a = 7;
+int *c = &a;
+c = c + 3;
+cout<< c << endl;
+
+Ans- 412 .
+
+Assume memory address of variable ‘a’ is : 200 and a double variable is of size 8 bytes, what will be the output -
+double a = 10.54;
+double *d = &a;
+d = d + 1;
+cout  << d << endl;
+
+Ans - 208 .
+
+Assume integer takes 4 bytes and integer pointer 8 bytes.
+int a[5];
+int *c;
+cout << sizeof(a) << “ “ << sizeof(c);
+
+Ans- 20 , 8 . // size of pointer depends on size of compiler . 
+
+int a[] = {1, 2, 3, 4};
+cout << *(a) << " " << *(a+1);
+ Ans - 1 2 .
+
+ Assume that address of 0th index of array ‘a’ is : 200.
+What is the output -
+int a[6] = {1, 2, 3};
+cout << a << “ “ << &a;
+
+Ans - 200 200 . // There is no additional memory allocation unlike pointer . 
+
+Assume that address of 0th index of array ‘a’ is : 200. What is the output -
+int a[3] = {1, 2, 3};
+cout << *(a + 2);
+
+Ans - 3.
+
+Assume address of 0th index of array 'a' is 200.
+What is the output -
+int a[6] = {1, 2, 3};
+int *b = a;
+cout << b[2];
+
+Ans - 3 . 
+
+Assume address of 0th index of array 'a' is 200.
+What is the output -
+int a[] = {1, 2, 3, 4, 5};
+cout << *(a) << " " << *(a + 4);
+
+Ans- 1,5. .
+
+int a[] = {1, 2, 3, 4};
+int *p = a++;
+cout << *p << endl;
+
+Ans- error .
+
+int a[] = {1, 2, 3, 4};
+int *p = a++;
+cout << *p << endl;
+
+Ans - b ;
+
+Assume address of 0th index of array ‘b’ is 200. What is the output -
+char b[] = "xyz";
+char *c = &b[0];
+cout << c << endl;
+
+Ans - xyz .
+
+Assume address of 0th index of array ‘b’ is 200. What is the output -
+char b[] = "xyz";
+char *c = &b[0];
+c++;
+cout << c << endl;
+
+Ans - yz.
+
+char s[]= "hello";
+char *p = s;
+cout << s[0] << " " << p[0];
+
+Ans - h,h.
