@@ -1,0 +1,78 @@
+Void pointer can point to which type of objects ?
+ Ans - All;
+ int main()
+{
+        int d = 65;
+        int i = d;
+        char ch = i;
+        cout << ch << endl;
+}
+Ans - A;
+#include <iostream>
+using namespace std;
+void updateValue(int *p){
+    *p = 610 % 255;
+}
+
+int main(){
+    char ch = 'A';
+    char *pt = &ch;
+    updateValue((int*)pt);
+    cout << ch;
+}
+
+Ans - d ;
+What is the correct syntax of declaring and defining a reference?
+ int a = 10 , int &b = a;
+
+ #include <iostream>
+using namespace std;
+
+void func(int p){
+    cout << p << " ";
+}
+
+int main(){
+    int i = 10;
+    int &p = i;
+    func(p++);
+    cout << i;
+}
+10 ,11;
+
+void func(int i, int& j, int p){
+    i++;
+    j++;
+    p++;
+}
+
+int main(){
+    int i = 10;
+    int j = 6;
+    int &p = i;
+    func(i, j, p);
+    cout << i << " " << j << " " << p;
+}
+
+Ans - 10 7 10 ;
+
+In CPP, dynamic memory allocation is done using ______________ operator.
+
+Ans - 10;
+
+How will you free the memory allocated by following program -
+#include <iostream>
+using namespace std;    
+
+int main() {
+    int *a = new int;
+}
+
+Ans- delete a;
+
+Correct statement for deallocating the array is -
+
+Ans - delete []a;
+On deleting a dynamic memory, if the pointer value is not modified, then the pointer points to?
+Ans - Same deleted memory .
+
