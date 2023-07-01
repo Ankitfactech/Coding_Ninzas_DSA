@@ -1,0 +1,222 @@
+Which of these statements is used to allocate memory for an object dynamically ?
+Ans -New;
+Which of the following is/are a valid statement(s) to create an object of class Bird in C++ ?
+Ans- Bird b;
+Figure out the correct statement
+class Car{
+    public : 
+    int price;
+};
+
+int main() {
+    Car c; 
+    //Figure out the correct statement to set the price of the car object referred to by c to “10000”
+}
+Ans- c.orice = 10000;
+
+#include <iostream>
+using namespace std;
+
+class Student {
+    int rollNumber;
+};
+
+int main() {
+    Student s;
+    cout << s.rollNumber;
+}
+
+Ans- Compilation Error . 
+
+#include <iostream>
+using namespace std;
+
+class Shape{
+    public : 
+    int height;
+    int width;
+};
+
+int main() {
+    Shape *s = new Shape();
+    s -> height = 1;
+    cout << s -> height;
+}
+
+Ans - 1;
+
+Which statement is not true in C++ language ?
+
+Ans - A private Number class cannot be accessed by same class . 
+
+What will be the Output ?
+#include <iostream>
+using namespace std;
+
+class Box{
+    public :
+    int width;
+    int height;
+    int length;
+    void volume(){
+        cout << length * width * height;
+    }
+};
+
+int main() {
+    Box b;
+    b.height = 5;
+    b.width = 4;
+    b.volume();
+}
+
+Ans - Garbage value;
+
+#include <iostream>
+using namespace std;
+
+class Student{
+    public :
+    char *name;
+    int rollNo;
+    Student(int num){
+        rollNo = num;
+    }
+
+    void print(){
+        cout << rollNo;
+    }
+};
+
+int main() {
+    Student s(12);
+    s.print();
+}
+
+Ans - 12;
+
+What will be the output of the following code ?
+#include <iostream>
+using namespace std;
+
+class Student{
+    public :
+    char name;
+    int rollNo;
+
+    Student(int num){
+        rollNo = num;
+    }
+
+    void print(){
+        cout << name << " "  <<  rollNo;
+    }
+};
+
+int main() {
+    Student *s = new Student();
+    s -> name = 'A';
+    s -> rollNo = 15;
+    s -> print();
+}
+Ans - What will be the output of the following code ?
+#include <iostream>
+using namespace std;
+
+class Student{
+    public :
+    char name;
+    int rollNo;
+
+    Student(int num){
+        rollNo = num;
+    }
+
+    void print(){
+        cout << name << " "  <<  rollNo;
+    }
+};
+
+int main() {
+    Student *s = new Student();
+    s -> name = 'A';
+    s -> rollNo = 15;
+    s -> print();
+}
+Ans - What will be the output of the following code ?
+#include <iostream>
+using namespace std;
+
+class Student{
+    public :
+    char name;
+    int rollNo;
+
+    Student(int num){
+        rollNo = num;
+    }
+
+    void print(){
+        cout << name << " "  <<  rollNo;
+    }
+};
+
+int main() {
+    Student *s = new Student();
+    s -> name = 'A';
+    s -> rollNo = 15;
+    s -> print();
+}
+Ans - Compilation error .  // Defeault constructor is available till then whennew own constructir is not created .
+
+1. It is invoked when object goes out of the scope
+2. Like constructor, it can also have parameters 
+3. It can be declared in private section
+4. It bears same name as that of the class and is preceded by tilde sign. 
+
+Ans - 2;
+
+Assume class DEMO. Which of the following statement(s) responsible to invoke copy constructor?
+1. DEMO D2(D1); //  Here D1 is an already created object of class  DEMO
+2. D2 = D1; // Here D1, D2 are already created objects of class DEMO
+
+Ans - only 1;
+
+class Pair{
+  public :
+  int first;
+  int second;
+};
+
+int main(){
+
+  Pair *p1 = new Pair;
+  Pair p2;
+}
+Which of the following statement is feasible ?
+
+p2 = *p1;
+
+Consider following piece of code:
+#include<iostream>
+using namespace std;
+
+class Pair{
+      public :
+      int first;
+      int second;
+};
+
+int main(){
+
+      Pair p1;
+      p1.first = 10;
+      p1.second = 20;
+      Pair p2;
+      p2 = p1;
+      cout << p2.first << " " << p2.second << endl;
+}
+What will be the output ?
+
+Ans - 10,20;
+
