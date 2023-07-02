@@ -17,9 +17,10 @@ Node* takeInput() {
 				temp = temp -> next;
 			}
 			temp -> next = newNode;
+             
 		}
-
-		cin >> data;
+        cin >> data;
+       
 	}
 	return head;
 }
